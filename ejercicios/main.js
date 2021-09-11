@@ -7,3 +7,19 @@ const miguel = new Student({
     EnglishSchool
   ],
 });
+
+const javi = new Student({
+  name: "Javier Gutierrez",
+  email: "jav@gmail.com",
+  userName: "Yav Gz",
+  learningPaths: [
+    SchoolWeb,
+    EnglishSchool
+  ],
+  approvedCourses: [
+    cursoDefHTML,
+    cursoPractHTML,
+    cursoProgBasica,
+    cursoEstrategiasInglés,
+  ]
+});
