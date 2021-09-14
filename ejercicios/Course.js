@@ -1,10 +1,23 @@
 class Course {
+  #name;
   constructor({
     name, 
     clases = []
   }){
-    this.name = name;
-    this.lases = clases;
+    this.#name = name;
+    this.clases = clases;
+  }
+
+  get name(){
+    return this.#name;
+  }
+
+  set name(newName){
+    if ( newName === "Curso pesimo de programacion basica") {
+      console.error("Web... no")
+    } else {
+      this.#name = newName;
+    }
   }
 }
 
