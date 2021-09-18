@@ -16,6 +16,49 @@ class Student {
     this.instagram = instagram;
     this.facebook = facebook;
     this.approvedCourses = approvedCourses;
-    this.learningPaths = learningPaths;
+    this.learningPaths = learningPaths;  
+  };
+  
+  approveCourse = (newCourse) => {
+    this.approvedCourses.push(newCourse)
+  }
+}
+
+
+class freeStudent  extends Student{
+  constructor(props){
+    super(props);
+  }
+
+  approveCourse(newCourse){
+    if (newCourse.isfree) {
+      this.approvedCourses.push(newCourse);
+    } else {
+      console.warn(`Lo sentimos ${this.name}, solo puedes tomar cursos abiertos`)
+    }
+  }
+}
+
+class basicStudent extends Student{
+  constructor(props){
+    super(props);
+  }
+
+  approveCourse(newCourse){
+    if (newCourse.lang !== "english") {
+      this.approvedCourses.push(newCourse);
+    } else {
+      console.warn(`Lo sentimos ${this.name}, no puedes tomar cursos en inglés`)
+    }
+  }
+}
+
+class expertStudent  extends Student{
+  constructor(props){
+    super(props);
+  }
+
+  approveCourse(newCourse){
+    this.approvedCourses.push(newCourse);
   }
 }

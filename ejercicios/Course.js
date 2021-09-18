@@ -2,10 +2,14 @@ class Course {
   #name;
   constructor({
     name, 
-    clases = []
+    clases = [],
+    isfree = false,
+    lang = "spanish"
   }){
     this.#name = name;
     this.clases = clases;
+    this.isfree = isfree;
+    this.lang = lang;
   }
 
   get name(){
@@ -30,7 +34,8 @@ const cursoProgBasica = new Course ({
    clase3ProgBasica,
    clase4ProgBasica,
    clase5ProgBasica,
-  ]
+  ],
+  isfree: true
 });
 
 const cursoDefHTML = new Course ({
@@ -63,7 +68,8 @@ const cursoEstrategiasInglés = new Course ({
    clase3EstrgtOnlineEng,
    clase6EstrgtOnlineEng,
    clase7EstrgtOnlineEng,
-  ]
+  ],
+  lang: "english"
 });
 
 const cursoInglésPrincipiantes = new Course ({
@@ -76,5 +82,6 @@ const cursoInglésPrincipiantes = new Course ({
    class5English,
    class6English,
    class7English
-  ]
+  ],
+  lang: "english"
 });

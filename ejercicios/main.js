@@ -1,4 +1,4 @@
-const miguel = new Student({
+const miguel = new freeStudent({
   name: "Miguel",
   email: "miguelin@gmail.com",
   userName: "Miguelon",
@@ -8,7 +8,7 @@ const miguel = new Student({
   ],
 });
 
-const javi = new Student({
+const javi = new expertStudent({
   name: "Javier Gutierrez",
   email: "jav@gmail.com",
   userName: "Yav Gz",
