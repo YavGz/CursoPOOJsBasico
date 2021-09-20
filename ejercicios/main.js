@@ -23,3 +23,11 @@ const javi = new expertStudent({
     cursoEstrategiasInglés,
   ]
 });
+
+
+const freddy = new teacherStudent({
+  name: "Freddy Vega",
+  email: "freddy@gmail.com",
+  userName: "Freddier",
+  twitter: "@Freddier",
+});

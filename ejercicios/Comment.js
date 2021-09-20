@@ -11,6 +11,8 @@ class Comment {
   }
 
   publicar () {
-    
+    console.log(`${this.studentName} (${this.studentRole})`);
+    console.log(`${this.likes} Likes`);
+    console.log(`${this.content}`);
   }
 }
